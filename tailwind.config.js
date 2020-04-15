@@ -8,6 +8,10 @@ module.exports = {
         "blue-dark": "#13293D",
         "grey-light": "#E8F1F2",
       },
+      fontFamily: {
+        merri: ["Merriweather", "serif"],
+        mont: ["Montserrat", "sans-serif"],
+      },
     },
   },
   variants: {},
