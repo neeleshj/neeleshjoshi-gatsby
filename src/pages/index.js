@@ -1,7 +1,8 @@
 import React from "react"
+import "../styles/global.css"
 
 const IndexPage = () => (
-  <div className="">
+  <div className="w-full">
     <div>Game</div>
     <div>Header</div>
     <div>Main Content</div>
