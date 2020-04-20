@@ -1,19 +1,26 @@
 import React from "react"
-import Helmet from "react-helmet"
-import "../styles/global.css"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
+
+import "../styles/tw.css"
 
 const IndexPage = () => (
-  <div className="w-full">
-    <Helmet>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400&display=swap"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <div>Game</div>
-    <div>Header</div>
-    <div>Main Content</div>
-  </div>
+  <Layout>
+    {/* <SEO title="Home" />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link> */}
+
+    <div className="h-screen w-full bg-black">test</div>
+    <div className="h-screen w-full bg-blue-500">test</div>
+  </Layout>
 )
 
 export default IndexPage
