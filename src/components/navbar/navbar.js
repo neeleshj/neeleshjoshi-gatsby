@@ -1,23 +1,15 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import "./navbar.css";
 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      prevScrollPos: window.pageYOffset,
-      visible: true,
-    };
   }
 
   render() {
     return (
-      <nav
-        className={classnames("navbar", {
-          "navbar--hidden": !this.state.visible,
-        })}
-      >
+      <nav className={classnames("navbar")}>
         <a href="#">Item 1</a>
         <a href="#">Item 2</a>
         <a href="#">Item 3</a>
