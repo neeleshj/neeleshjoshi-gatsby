@@ -14,15 +14,16 @@ export default class extends Component {
     return (
       <div className="relative">
         <header
-          className="w-full bg-black"
-          style={{ minHeight: `calc(100vh - ${headerHeight})` }}
+          className="w-full p-3"
+          style={{ minHeight: `calc(100vh - ${headerHeight} - 26px) ` }}
         >
-          test
+          <div
+            className="w-full bg-blue-primary"
+            style={{ minHeight: `calc(100vh - ${headerHeight} - 26px) ` }}
+          />
         </header>
         <Navbar />
-        <div className="h-screen w-full bg-blue-500">test</div>
-        <div className="h-screen w-full bg-blue-500">test</div>
-        <div className="h-screen w-full bg-blue-500">test</div>
+        <div className="h-screen w-full bg-white">test</div>
       </div>
     );
   }

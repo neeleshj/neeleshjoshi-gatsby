@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import "./navbar.scss";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -9,13 +8,8 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className={classnames("navbar")}>
-        <h1 className="font-merri">TEAT</h1>
-        <h1 className="font-mont">TEAT</h1>
-
-        <a href="#">Item 1</a>
-        <a href="#">Item 2</a>
-        <a href="#">Item 3</a>
+      <nav className="w-full h-navbar z-10 sticky top-0 bg-red-500">
+        <h3 className="font-merri font-bold text-6xl text-blue-dark">N</h3>
       </nav>
     );
   }
