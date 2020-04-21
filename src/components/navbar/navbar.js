@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import "./navbar.css";
+import "./navbar.scss";
 
 export default class Navbar extends Component {
   constructor(props) {
