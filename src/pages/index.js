@@ -10,7 +10,7 @@ import "../styles/tw.css";
 
 export default class extends Component {
   render() {
-    const headerHeight = "104px";
+    const headerHeight = "95px";
     return (
       <div className="relative">
         <header

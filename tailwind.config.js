@@ -12,7 +12,7 @@ module.exports = {
         merri: ["Merriweather", "serif"],
         mont: ["Montserrat", "sans-serif"],
       },
-    },
+    }
   },
   variants: {},
   plugins: [],
