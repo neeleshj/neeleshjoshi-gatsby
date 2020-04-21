@@ -12,7 +12,10 @@ module.exports = {
         merri: ["Merriweather", "serif"],
         mont: ["Montserrat", "sans-serif"],
       },
-    }
+      padding: {
+        "nav-bar": "95px",
+      },
+    },
   },
   variants: {},
   plugins: [],

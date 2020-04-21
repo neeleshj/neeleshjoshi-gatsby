@@ -12,19 +12,28 @@ export default class extends Component {
   render() {
     const headerHeight = "95px";
     return (
-      <div className="relative">
-        <header
-          className="w-full p-3"
-          style={{ minHeight: `calc(100vh - ${headerHeight}` }}
-        >
-          <div
-            className="w-full bg-blue-primary"
-            style={{ minHeight: `calc(100vh - ${headerHeight} ) ` }}
-          />
-        </header>
-        <Navbar />
-        <div className="h-screen w-full bg-white">test</div>
-      </div>
+      <Layout>
+        <div className="relative">
+          <header
+            className="w-full p-3"
+            style={{ minHeight: `calc(100vh - ${headerHeight}` }}
+          >
+            <div
+              className="w-full bg-blue-primary"
+              style={{ minHeight: `calc(100vh - ${headerHeight} ) ` }}
+            />
+          </header>
+          <Navbar />
+          <div className="h-screen w-full bg-white px-3 py-nav-bar flex flex-col items-center justify-center">
+            <div className="text-center">
+              <h4 className="font-merri font-bold text-4xl">Hello.</h4>
+              <h5 className="font-mont text-3xl">I'm Neelesh.</h5>
+              <h5 className="font-mont text-3xl">A web developer.</h5>
+              <h5 className="font-mont text-3xl">Let's talk?</h5>
+            </div>
+          </div>
+        </div>
+      </Layout>
     );
   }
 }

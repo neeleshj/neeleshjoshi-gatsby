@@ -20,7 +20,9 @@ export default class Navbar extends Component {
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  // Remove the event listener when the component is unmount.
+  /**
+   *  Remove the event listener when the component is unmount.
+   */
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
