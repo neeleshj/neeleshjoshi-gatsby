@@ -10,16 +10,16 @@ import "../styles/tw.css";
 
 export default class extends Component {
   render() {
-    const headerHeight = "75px";
+    const headerHeight = "104px";
     return (
       <div className="relative">
         <header
           className="w-full p-3"
-          style={{ minHeight: `calc(100vh - ${headerHeight} - 26px) ` }}
+          style={{ minHeight: `calc(100vh - ${headerHeight}` }}
         >
           <div
             className="w-full bg-blue-primary"
-            style={{ minHeight: `calc(100vh - ${headerHeight} - 26px) ` }}
+            style={{ minHeight: `calc(100vh - ${headerHeight} ) ` }}
           />
         </header>
         <Navbar />

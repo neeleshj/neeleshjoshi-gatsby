@@ -12,9 +12,6 @@ module.exports = {
         merri: ["Merriweather", "serif"],
         mont: ["Montserrat", "sans-serif"],
       },
-      height: {
-        navbar: "75px",
-      },
     },
   },
   variants: {},
