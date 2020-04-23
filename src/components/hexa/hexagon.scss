@@ -1,0 +1,319 @@
+:root {
+  /* Change this to change the appearance of the hexaons */
+  --hex-width: 60px;
+  --hex-between: 10px;
+
+  /* Other hexagon dimentions */
+  --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+  --hex-margin: calc(var(--hex-width) / 2);
+  --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+  --hex-transition: all 0.2s ease;
+
+  /* Colors */
+  --color-hex-default: #000000;
+  --color-hex-hover: #ffffff;
+
+  --color-vuejs: #4fc08d;
+  --color-angular: #dd0031;
+  --color-reactjs: #61dafb;
+  --color-ionic: #3880ff;
+
+  --color-nodejs: #339933;
+  --color-firebase: #ffca28;
+  --color-graphql: #e10098;
+  --color-nuxtjs: #00c58e;
+  --color-gatsby: #663399;
+  --color-git: #f05032;
+
+  --color-css: #1572b6;
+  --color-html: #e34f26;
+  --color-javascript: #f7df1e;
+  --color-typescript: #007acc;
+  --color-sass: #cc6699;
+
+  --color-gmail: #d14836;
+  --color-linkedin: #0077b5;
+}
+
+/* Hexagons */
+.hexagon-container {
+  display: grid;
+  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(
+      --hex-width
+    );
+  grid-auto-rows: calc(var(--hex-width) - 28.87px / 2);
+  grid-gap: var(--hex-between) var(--hex-between);
+  padding-top: 1rem;
+  padding-bottom: calc(var(--hex-border) + 1rem);
+}
+
+.hexagon {
+  align-items: center;
+  background-color: var(--color-hex-default);
+  cursor: pointer;
+  display: flex;
+  fill: white;
+  height: var(--hex-height);
+  justify-content: center;
+  margin: var(--hex-border) 0;
+  position: relative;
+  transition: var(--hex-transition);
+  width: var(--hex-width);
+}
+
+.hexagon::after,
+.hexagon::before {
+  border-left: var(--hex-margin) solid transparent;
+  border-right: var(--hex-margin) solid transparent;
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: var(--hex-transition);
+  width: 0;
+}
+.hexagon::after {
+  border-top: var(--hex-border) solid var(--color-hex-default);
+  top: 100%;
+  width: 0;
+}
+.hexagon::before {
+  border-bottom: var(--hex-border) solid var(--color-hex-default);
+  bottom: 100%;
+}
+
+.hexagon:hover {
+  background-color: var(--color-hex-hover);
+}
+.hexagon:hover::after,
+.hexagon:hover::before {
+  border-top-color: var(--color-hex-hover);
+  border-bottom-color: var(--color-hex-hover);
+}
+
+.hexagon:nth-child(8n + 5),
+.hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 7),
+.hexagon:nth-child(8n + 8) {
+  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
+.hexagon > svg {
+  height: 75%;
+  transition: var(--hex-transition);
+}
+
+/* Colors */
+.color-vuejs {
+  background-color: var(--color-vuejs);
+}
+.color-vuejs::after,
+.color-vuejs::before {
+  border-top-color: var(--color-vuejs);
+  border-bottom-color: var(--color-vuejs);
+}
+.color-vuejs:hover {
+  fill: var(--color-vuejs);
+}
+
+.color-angular {
+  background-color: var(--color-angular);
+}
+.color-angular::after,
+.color-angular::before {
+  border-top-color: var(--color-angular);
+  border-bottom-color: var(--color-angular);
+}
+.color-angular:hover {
+  fill: var(--color-angular);
+}
+
+.color-reactjs {
+  background-color: var(--color-reactjs);
+}
+.color-reactjs::after,
+.color-reactjs::before {
+  border-top-color: var(--color-reactjs);
+  border-bottom-color: var(--color-reactjs);
+}
+.color-reactjs:hover {
+  fill: var(--color-reactjs);
+}
+
+.color-ionic {
+  background-color: var(--color-ionic);
+}
+.color-ionic::after,
+.color-ionic::before {
+  border-top-color: var(--color-ionic);
+  border-bottom-color: var(--color-ionic);
+}
+.color-ionic:hover {
+  fill: var(--color-ionic);
+}
+
+.color-vuejs {
+  background-color: var(--color-vuejs);
+}
+.color-vuejs::after,
+.color-vuejs::before {
+  border-top-color: var(--color-vuejs);
+  border-bottom-color: var(--color-vuejs);
+}
+.color-vuejs:hover {
+  fill: var(--color-vuejs);
+}
+
+.color-nodejs {
+  background-color: var(--color-nodejs);
+}
+.color-nodejs::after,
+.color-nodejs::before {
+  border-top-color: var(--color-nodejs);
+  border-bottom-color: var(--color-nodejs);
+}
+.color-nodejs:hover {
+  fill: var(--color-nodejs);
+}
+
+.color-firebase {
+  background-color: var(--color-firebase);
+}
+.color-firebase::after,
+.color-firebase::before {
+  border-top-color: var(--color-firebase);
+  border-bottom-color: var(--color-firebase);
+}
+.color-firebase:hover {
+  fill: var(--color-firebase);
+}
+
+.color-graphql {
+  background-color: var(--color-graphql);
+}
+.color-graphql::after,
+.color-graphql::before {
+  border-top-color: var(--color-graphql);
+  border-bottom-color: var(--color-graphql);
+}
+.color-graphql:hover {
+  fill: var(--color-graphql);
+}
+
+.color-nuxtjs {
+  background-color: var(--color-nuxtjs);
+}
+.color-nuxtjs::after,
+.color-nuxtjs::before {
+  border-top-color: var(--color-nuxtjs);
+  border-bottom-color: var(--color-nuxtjs);
+}
+.color-nuxtjs:hover {
+  fill: var(--color-nuxtjs);
+}
+
+.color-gatsby {
+  background-color: var(--color-gatsby);
+}
+.color-gatsby::after,
+.color-gatsby::before {
+  border-top-color: var(--color-gatsby);
+  border-bottom-color: var(--color-gatsby);
+}
+.color-gatsby:hover {
+  fill: var(--color-gatsby);
+}
+
+.color-git {
+  background-color: var(--color-git);
+}
+.color-git::after,
+.color-git::before {
+  border-top-color: var(--color-git);
+  border-bottom-color: var(--color-git);
+}
+.color-git:hover {
+  fill: var(--color-git);
+}
+
+.color-css {
+  background-color: var(--color-css);
+}
+.color-css::after,
+.color-css::before {
+  border-top-color: var(--color-css);
+  border-bottom-color: var(--color-css);
+}
+.color-css:hover {
+  fill: var(--color-css);
+}
+
+.color-html {
+  background-color: var(--color-html);
+}
+.color-html::after,
+.color-html::before {
+  border-top-color: var(--color-html);
+  border-bottom-color: var(--color-html);
+}
+.color-html:hover {
+  fill: var(--color-html);
+}
+.color-javascript {
+  background-color: var(--color-javascript);
+}
+.color-javascript::after,
+.color-javascript::before {
+  border-top-color: var(--color-javascript);
+  border-bottom-color: var(--color-javascript);
+}
+.color-javascript:hover {
+  fill: var(--color-javascript);
+}
+
+.color-typescript {
+  background-color: var(--color-typescript);
+}
+.color-typescript::after,
+.color-typescript::before {
+  border-top-color: var(--color-typescript);
+  border-bottom-color: var(--color-typescript);
+}
+.color-typescript:hover {
+  fill: var(--color-typescript);
+}
+
+.color-sass {
+  background-color: var(--color-sass);
+}
+.color-sass::after,
+.color-sass::before {
+  border-top-color: var(--color-sass);
+  border-bottom-color: var(--color-sass);
+}
+.color-sass:hover {
+  fill: var(--color-sass);
+}
+
+.color-gmail {
+  background-color: var(--color-gmail);
+}
+.color-gmail::after,
+.color-gmail::before {
+  border-top-color: var(--color-gmail);
+  border-bottom-color: var(--color-gmail);
+}
+.color-gmail:hover {
+  fill: var(--color-gmail);
+}
+
+.color-linkedin {
+  background-color: var(--color-linkedin);
+}
+.color-linkedin::after,
+.color-linkedin::before {
+  border-top-color: var(--color-linkedin);
+  border-bottom-color: var(--color-linkedin);
+}
+.color-linkedin:hover {
+  fill: var(--color-linkedin);
+}
