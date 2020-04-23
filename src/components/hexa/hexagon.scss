@@ -1,7 +1,7 @@
 :root {
   /* Change this to change the appearance of the hexaons */
   --hex-width: 60px;
-  --hex-between: 10px;
+  --hex-between: 15px;
 
   /* Other hexagon dimentions */
   --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
@@ -64,7 +64,7 @@
 .hexagon {
   align-items: center;
   background-color: var(--color-hex-default);
-  cursor: pointer;
+  // cursor: pointer;
   display: flex;
   fill: white;
   height: var(--hex-height);
