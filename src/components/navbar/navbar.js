@@ -33,7 +33,7 @@ export default class Navbar extends Component {
    */
   handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const threshhold = 150;
+    const threshhold = 250;
     const showHeaderBackground = currentScrollPos > threshhold;
     this.setState({
       showHeaderBackground,
@@ -54,11 +54,13 @@ export default class Navbar extends Component {
               "bg-white": !this.state.showHeaderBackground,
               "bg-blue-primary": this.state.showHeaderBackground,
               "px-2": this.state.showHeaderBackground,
-              rounded: this.state.showHeaderBackground,
+              "text-blue-dark": !this.state.showHeaderBackground,
+              "text-grey-light": this.state.showHeaderBackground,
+              // rounded: this.state.showHeaderBackground,
             }
           )}
         >
-          <h3 className="font-merri font-bold text-5xl text-blue-dark">N</h3>
+          <h3 className="font-merri font-bold text-5xl">N</h3>
         </div>
       </nav>
     );
