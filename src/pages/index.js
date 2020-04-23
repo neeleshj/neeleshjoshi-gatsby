@@ -8,6 +8,7 @@ import Navbar from "../components/navbar/navbar";
 import HexagonGrid from "../components/hexa/hexagrid";
 
 import "../styles/tw.css";
+import "../components/hexa/hexagon.scss";
 
 export default class extends Component {
   render() {
@@ -26,9 +27,11 @@ export default class extends Component {
           </header>
           <Navbar />
           <div className="h-screen w-full bg-white px-3 py-nav-bar flex flex-col items-center justify-center">
-            <div className="text-start">
-              <h4 className="font-merri font-bold text-4xl">Hello.</h4>
-              <h5 className="font-mont text-3xl">I'm Neelesh.</h5>
+            <div className="text-start md:text-center">
+              <h4 className="font-merri font-bold text-4xl">
+                Hello. I'm Neelesh.
+              </h4>
+              <h5 className="font-mont text-3xl row-left-margin"></h5>
               <h5 className="font-mont text-3xl">A web developer.</h5>
               <HexagonGrid />
               <h5 className="font-mont text-3xl">Let's talk?</h5>

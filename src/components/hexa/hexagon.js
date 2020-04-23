@@ -10,11 +10,14 @@ export default class Hexagon extends Component {
   }
   render() {
     const colorClass = `color-${this.props.color}`;
-    return <div className={classnames("hexagon", colorClass)}></div>;
+    return (
+      <div className={classnames("hexagon", colorClass)}>
+        {this.props.children}
+      </div>
+    );
   }
 }
 
 Hexagon.propTypes = {
   color: PropTypes.string,
-  iconName: PropTypes.string,
 };
