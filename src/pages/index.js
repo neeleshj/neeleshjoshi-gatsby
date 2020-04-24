@@ -17,7 +17,7 @@ export default class extends Component {
     return (
       <Layout>
         <div className="relative">
-          <header
+          {/* <header
             className="w-full p-3"
             style={{ minHeight: `calc(100vh - ${headerHeight}` }}
           >
@@ -25,9 +25,9 @@ export default class extends Component {
               className="w-full bg-blue-primary"
               style={{ minHeight: `calc(100vh - ${headerHeight} ) ` }}
             />
-          </header>
-          <Navbar />
-          <div className="h-screen w-full bg-white px-3 py-nav-bar flex flex-col items-center justify-center">
+          </header> */}
+          {/* <Navbar /> */}
+          <div className="h-screen w-full bg-white px-3 flex flex-col items-center justify-center">
             <div className="text-start sm:text-center">
               <h4 className="font-merri font-bold text-4xl mb-2">
                 Hello, I'm Neelesh.

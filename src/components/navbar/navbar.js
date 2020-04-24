@@ -9,7 +9,7 @@ export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showHeaderBackground: false,
+      showHeaderBackground: true,
     };
   }
 
@@ -35,9 +35,9 @@ export default class Navbar extends Component {
     const currentScrollPos = window.pageYOffset;
     const threshhold = 250;
     const showHeaderBackground = currentScrollPos > threshhold;
-    this.setState({
-      showHeaderBackground,
-    });
+    // this.setState({
+    //   showHeaderBackground,
+    // });
   };
 
   render() {
