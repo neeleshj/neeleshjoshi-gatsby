@@ -23,10 +23,17 @@ export default class extends Component {
     });
     anime({
       targets: ".hexagon",
-      duration: 1500,
+      duration: 1750,
       easing: "easeInOutExpo",
       opacity: [0, 1],
       delay: anime.stagger(25), // increase delay by 100ms for each elements.
+    });
+    anime({
+      targets: ".title-text--2",
+      duration: 1500,
+      easing: "easeInOutExpo",
+      opacity: [0, 1],
+      delay: 750, // increase delay by 100ms for each elements.
     });
   }
   render() {
@@ -58,7 +65,7 @@ export default class extends Component {
                 </span>
               </h4>
               <HexagonGrid />
-              <h5 className="title-text font-mont text-3xl my-2">
+              <h5 className="title-text--2 font-mont text-3xl my-2">
                 Let's talk?
               </h5>
               <div className="flex flex-row sm:justify-center items-center">
