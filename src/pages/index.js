@@ -29,10 +29,15 @@ export default class extends Component {
           {/* <Navbar /> */}
           <div className="h-screen w-full bg-white px-3 flex flex-col items-center justify-center">
             <div className="text-start sm:text-center">
-              <h4 className="font-merri font-bold text-4xl mb-2">
-                Hello, I'm Neelesh.
+              <h4 className="mb-3">
+                <span className="font-mont text-3xl">Hello, I'm </span>
+                <span className="font-merri font-bold text-4xl">
+                  Neelesh 
+                </span>
+                <span className="font-mont text-3xl">
+                  , a web developer.
+                </span>
               </h4>
-              <h5 className="font-mont text-3xl mb-2">A web developer.</h5>
               <HexagonGrid />
               <h5 className="font-mont text-3xl my-2">Let's talk?</h5>
               <div className="flex flex-row sm:justify-center items-center">
