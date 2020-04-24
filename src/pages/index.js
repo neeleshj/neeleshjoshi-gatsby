@@ -29,16 +29,15 @@ export default class extends Component {
           <Navbar />
           <div className="h-screen w-full bg-white px-3 py-nav-bar flex flex-col items-center justify-center">
             <div className="text-start sm:text-center">
-              <h4 className="font-merri font-bold text-4xl">
+              <h4 className="font-merri font-bold text-4xl mb-2">
                 Hello, I'm Neelesh.
               </h4>
-              <h5 className="font-mont text-3xl row-left-margin"></h5>
-              <h5 className="font-mont text-3xl">A web developer.</h5>
+              <h5 className="font-mont text-3xl mb-2">A web developer.</h5>
               <HexagonGrid />
-              <h5 className="font-mont text-3xl">Let's talk?</h5>
-              <div className="mt-2 flex flex-row sm:justify-center items-center">
+              <h5 className="font-mont text-3xl my-2">Let's talk?</h5>
+              <div className="flex flex-row sm:justify-center items-center">
                 <a
-                  className="mr-3 cursor-pointer"
+                  className="cursor-pointer"
                   href="mailto:hello@neeleshjoshi.co.uk"
                 >
                   <Hexagon color="gmail">
