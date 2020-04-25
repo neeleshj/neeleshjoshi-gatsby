@@ -10,7 +10,7 @@ export const Square: FunctionComponent<SquareProps> = ({
   colorClass,
   children,
 }) => {
-  return <div className={classnames("square", colorClass)}>{children}</div>;
+  return <div className={classnames("square staggered", colorClass)}>{children}</div>;
 };
 
 export default Square;

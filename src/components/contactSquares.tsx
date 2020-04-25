@@ -8,7 +8,7 @@ export default class ContactSquares extends Component {
 
   render(): ReactNode {
     return (
-      <div className="flex">
+      <div className="flex flex-row md:justify-center">
         <a className="cursor-pointer" href="mailto:hello@neeleshjoshi.co.uk">
           <Square colorClass={this.getSquareClassName("gmail")}>
             <svg
