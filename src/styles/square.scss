@@ -1,0 +1,240 @@
+.square {
+  height: var(--square-width);
+  width: var(--square-width);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+  transition: var(--square-transition);
+
+  &:hover {
+    background-color: var(--color-hex-hover);
+  }
+  &:hover::after,
+  &:hover::before {
+    border-top-color: var(--color-hex-hover);
+    border-bottom-color: var(--color-hex-hover);
+  }
+
+  & > svg {
+    height: 75%;
+    transition: var(--hex-transition);
+  }
+}
+
+/* Colors */
+.color-vuejs {
+  background-color: var(--color-vuejs);
+}
+.color-vuejs::after,
+.color-vuejs::before {
+  border-top-color: var(--color-vuejs);
+  border-bottom-color: var(--color-vuejs);
+}
+.color-vuejs:hover {
+  fill: var(--color-vuejs);
+}
+
+.color-angular {
+  background-color: var(--color-angular);
+}
+.color-angular::after,
+.color-angular::before {
+  border-top-color: var(--color-angular);
+  border-bottom-color: var(--color-angular);
+}
+.color-angular:hover {
+  fill: var(--color-angular);
+}
+
+.color-reactjs {
+  background-color: var(--color-reactjs);
+}
+.color-reactjs::after,
+.color-reactjs::before {
+  border-top-color: var(--color-reactjs);
+  border-bottom-color: var(--color-reactjs);
+}
+.color-reactjs:hover {
+  fill: var(--color-reactjs);
+}
+
+.color-ionic {
+  background-color: var(--color-ionic);
+}
+.color-ionic::after,
+.color-ionic::before {
+  border-top-color: var(--color-ionic);
+  border-bottom-color: var(--color-ionic);
+}
+.color-ionic:hover {
+  fill: var(--color-ionic);
+}
+
+.color-vuejs {
+  background-color: var(--color-vuejs);
+}
+.color-vuejs::after,
+.color-vuejs::before {
+  border-top-color: var(--color-vuejs);
+  border-bottom-color: var(--color-vuejs);
+}
+.color-vuejs:hover {
+  fill: var(--color-vuejs);
+}
+
+.color-nodejs {
+  background-color: var(--color-nodejs);
+}
+.color-nodejs::after,
+.color-nodejs::before {
+  border-top-color: var(--color-nodejs);
+  border-bottom-color: var(--color-nodejs);
+}
+.color-nodejs:hover {
+  fill: var(--color-nodejs);
+}
+
+.color-firebase {
+  background-color: var(--color-firebase);
+}
+.color-firebase::after,
+.color-firebase::before {
+  border-top-color: var(--color-firebase);
+  border-bottom-color: var(--color-firebase);
+}
+.color-firebase:hover {
+  fill: var(--color-firebase);
+}
+
+.color-graphql {
+  background-color: var(--color-graphql);
+}
+.color-graphql::after,
+.color-graphql::before {
+  border-top-color: var(--color-graphql);
+  border-bottom-color: var(--color-graphql);
+}
+.color-graphql:hover {
+  fill: var(--color-graphql);
+}
+
+.color-nuxtjs {
+  background-color: var(--color-nuxtjs);
+}
+.color-nuxtjs::after,
+.color-nuxtjs::before {
+  border-top-color: var(--color-nuxtjs);
+  border-bottom-color: var(--color-nuxtjs);
+}
+.color-nuxtjs:hover {
+  fill: var(--color-nuxtjs);
+}
+
+.color-gatsby {
+  background-color: var(--color-gatsby);
+}
+.color-gatsby::after,
+.color-gatsby::before {
+  border-top-color: var(--color-gatsby);
+  border-bottom-color: var(--color-gatsby);
+}
+.color-gatsby:hover {
+  fill: var(--color-gatsby);
+}
+
+.color-git {
+  background-color: var(--color-git);
+}
+.color-git::after,
+.color-git::before {
+  border-top-color: var(--color-git);
+  border-bottom-color: var(--color-git);
+}
+.color-git:hover {
+  fill: var(--color-git);
+}
+
+.color-css {
+  background-color: var(--color-css);
+}
+.color-css::after,
+.color-css::before {
+  border-top-color: var(--color-css);
+  border-bottom-color: var(--color-css);
+}
+.color-css:hover {
+  fill: var(--color-css);
+}
+
+.color-html {
+  background-color: var(--color-html);
+}
+.color-html::after,
+.color-html::before {
+  border-top-color: var(--color-html);
+  border-bottom-color: var(--color-html);
+}
+.color-html:hover {
+  fill: var(--color-html);
+}
+.color-javascript {
+  background-color: var(--color-javascript);
+}
+.color-javascript::after,
+.color-javascript::before {
+  border-top-color: var(--color-javascript);
+  border-bottom-color: var(--color-javascript);
+}
+.color-javascript:hover {
+  fill: var(--color-javascript);
+}
+
+.color-typescript {
+  background-color: var(--color-typescript);
+}
+.color-typescript::after,
+.color-typescript::before {
+  border-top-color: var(--color-typescript);
+  border-bottom-color: var(--color-typescript);
+}
+.color-typescript:hover {
+  fill: var(--color-typescript);
+}
+
+.color-sass {
+  background-color: var(--color-sass);
+}
+.color-sass::after,
+.color-sass::before {
+  border-top-color: var(--color-sass);
+  border-bottom-color: var(--color-sass);
+}
+.color-sass:hover {
+  fill: var(--color-sass);
+}
+
+.color-gmail {
+  background-color: var(--color-gmail);
+}
+.color-gmail::after,
+.color-gmail::before {
+  border-top-color: var(--color-gmail);
+  border-bottom-color: var(--color-gmail);
+}
+.color-gmail:hover {
+  fill: var(--color-gmail);
+}
+
+.color-linkedin {
+  background-color: var(--color-linkedin);
+}
+.color-linkedin::after,
+.color-linkedin::before {
+  border-top-color: var(--color-linkedin);
+  border-bottom-color: var(--color-linkedin);
+}
+.color-linkedin:hover {
+  fill: var(--color-linkedin);
+}
