@@ -14,6 +14,8 @@ export default class IndexPage extends Component {
       duration: 1750,
       easing: "easeInOutExpo",
       opacity: [0, 1],
+      translateY: ["-10px", "0px"],
+      translateX: ["-5px", "0px"],
       delay: anime.stagger(50), // increase delay by 100ms for each elements.
     });
   }
