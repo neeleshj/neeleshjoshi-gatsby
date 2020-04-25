@@ -9,7 +9,12 @@ export default class ContactSquares extends Component {
   render(): ReactNode {
     return (
       <div className="flex flex-row md:justify-center">
-        <a className="cursor-pointer" href="mailto:hello@neeleshjoshi.co.uk">
+        <a
+          className="cursor-pointer"
+          href="mailto:hello@neeleshjoshi.co.uk"
+          aria-label="link to email"
+          rel="noopener noreferrer"
+        >
           <Square colorClass={this.getSquareClassName("gmail")}>
             <svg
               role="img"
@@ -25,6 +30,8 @@ export default class ContactSquares extends Component {
           className="cursor-pointer"
           href="https://www.linkedin.com/in/neeleshjjoshi/"
           target="_blank"
+          aria-label="link to linkedin profile"
+          rel="noopener noreferrer"
         >
           <Square colorClass={this.getSquareClassName("linkedin")}>
             <svg
