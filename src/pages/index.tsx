@@ -41,10 +41,20 @@ export default class IndexPage extends Component {
           <ContactSquares />
         </div>
         <div className="w-full absolute z-10 bottom-0 left-0 right-0 mb-3 text-center font-merri text-lg text-blue-tertiary font-bold">
-          <a className="px-2" href="https://github.com/neeleshj">
+          <a
+            className="px-2"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/neeleshj"
+          >
             github
           </a>
-          <a className="px-2" href="https://medium.com/@neeleshjjoshi">
+          <a
+            className="px-2"
+            target="_blank"
+            rel="noreferrer"
+            href="https://medium.com/@neeleshjjoshi"
+          >
             medium
           </a>
         </div>
