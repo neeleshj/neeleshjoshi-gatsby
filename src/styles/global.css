@@ -5,7 +5,7 @@
 
 :root {
   --square-width: 60px;
-  --square-transition: all 0.25s easeIn
+  --square-transition: all 0.25s easeIn;
 
   /* Colors */
   --color-hex-default: #000000;

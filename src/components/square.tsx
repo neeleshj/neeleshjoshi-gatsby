@@ -12,3 +12,5 @@ export const Square: FunctionComponent<SquareProps> = ({
 }) => {
   return <div className={classnames("square", colorClass)}>{children}</div>;
 };
+
+export default Square;
