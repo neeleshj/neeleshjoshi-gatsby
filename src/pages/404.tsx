@@ -1,39 +1,16 @@
-// import React from "react";
-// import { graphql } from "gatsby";
+import React from "react";
 
-// import Layout from "../components/layout";
-// import SEO from "../components/seo";
+import SEO from "../components/seo";
 
-// interface Props {
-//   data: {
-//     site: {
-//       siteMetadata: {
-//         title: string,
-//       },
-//     },
-//   };
-// }
+const NotFoundPage = () => {
+  return (
+    <div className="w-full h-screen flex items-center justify-center">
+      <SEO title="404: Not Found" />
+      <h1 className="text-blue-dark font-merri text-4xl">
+        I am not the page you were looking for.
+      </h1>
+    </div>
+  );
+};
 
-// const NotFoundPage = ({ data }: Props) => {
-//   const siteTitle = data.site.siteMetadata.title;
-
-//   return (
-//     <Layout location={window.location} title={siteTitle}>
-//       <SEO title="404: Not Found" />
-//       <h1>Not Found</h1>
-//       <p>You just hit a route that doesn't exist... the sadness.</p>
-//     </Layout>
-//   );
-// };
-
-// export default NotFoundPage;
-
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `;
+export default NotFoundPage;
