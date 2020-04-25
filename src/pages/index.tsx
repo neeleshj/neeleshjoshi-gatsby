@@ -43,7 +43,7 @@ export default class IndexPage extends Component {
         </div>
         <div className="w-full absolute z-10 bottom-0 left-0 right-0 mb-3 text-center font-merri text-lg text-blue-tertiary font-bold">
           <a
-            className="px-2"
+            className="staggered px-2"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/neeleshj"
@@ -52,7 +52,7 @@ export default class IndexPage extends Component {
             github
           </a>
           <a
-            className="px-2"
+            className="staggered px-2"
             target="_blank"
             rel="noopener noreferrer"
             href="https://medium.com/@neeleshjjoshi"
