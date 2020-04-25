@@ -1,6 +1,7 @@
 .square {
   height: var(--square-width);
   width: var(--square-width);
+  margin: 5px;
   position: relative;
   display: flex;
   justify-content: center;

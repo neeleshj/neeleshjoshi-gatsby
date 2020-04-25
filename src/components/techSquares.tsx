@@ -1,13 +1,13 @@
-import React, { FunctionComponent, Component } from "react";
+import React, { FunctionComponent, Component, ReactNode } from "react";
 import Square from "./square";
 
 export default class TechSquares extends Component {
   getSquareClassName = (color: string): string => {
     return `color-${color}`;
   };
-  render() {
+  render(): ReactNode {
     return (
-      <div className="max-w-lg flex flex-row flex-wrap md:justify-center md:items-center">
+      <div className="max-w-xl flex flex-row flex-wrap md:justify-center md:items-center">
         <Square colorClass={this.getSquareClassName("vuejs")}>
           <svg
             role="img"
