@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/react-helmet": "^5.0.15",
     "animejs": "^3.2.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.20.12",
@@ -15,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sass": "^2.2.3",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-typescript": "^2.3.5",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "node-sass": "^4.13.1",
@@ -23,9 +25,13 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-scrollmagic": "^2.2.0",
-    "scrollmagic": "^2.0.7"
+    "scrollmagic": "^2.0.7",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.2.0"
   },
@@ -40,6 +46,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "type-check": "tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
