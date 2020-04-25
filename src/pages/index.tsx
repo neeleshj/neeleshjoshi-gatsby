@@ -1,4 +1,5 @@
 import React, { Component, ReactNode } from "react";
+import Helmet from "react-helmet";
 import "../styles/global.css";
 
 import anime from "animejs";
@@ -23,7 +24,7 @@ export default class IndexPage extends Component {
   render(): ReactNode {
     return (
       <div className="w-full h-screen relative px-3 flex flex-col items-center justify-center">
-        <SEO title="Home" description="Landing page" />
+        <SEO title="Home" description="Landing page" lang="en" />
         <div className="bg-white flex flex-col text-start md:text-center">
           <h1 className="text-blue-dark font-mont text-3xl py-4">
             <span className="staggered">Hello, </span>
@@ -44,16 +45,18 @@ export default class IndexPage extends Component {
           <a
             className="px-2"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://github.com/neeleshj"
+            aria-label="github profile link"
           >
             github
           </a>
           <a
             className="px-2"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://medium.com/@neeleshjjoshi"
+            aria-label="medium profile link"
           >
             medium
           </a>
