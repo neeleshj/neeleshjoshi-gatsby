@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@100;200;300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --square-width: 55px;
+  --square-transition: all 0.25s easeIn;
+
+  /* Colors */
+  --color-hex-default: #000000;
+  --color-hex-hover: #ffffff;
+
+  --color-vuejs: #4fc08d;
+  --color-angular: #dd0031;
+  --color-reactjs: #61dafb;
+  --color-ionic: #3880ff;
+
+  --color-nodejs: #339933;
+  --color-firebase: #ffca28;
+  --color-graphql: #e10098;
+  --color-nuxtjs: #00c58e;
+  --color-gatsby: #663399;
+  --color-git: #f05032;
+
+  --color-css: #1572b6;
+  --color-html: #e34f26;
+  --color-javascript: #f7df1e;
+  --color-typescript: #007acc;
+  --color-sass: #cc6699;
+
+  --color-gmail: #d14836;
+  --color-linkedin: #0077b5;
+}
+
+.staggered {
+  opacity: 0;
+}
