@@ -11,7 +11,7 @@ export default class ContactSquares extends Component {
       <div className="flex flex-row md:justify-center">
         <a
           className="cursor-pointer"
-          href="mailto:hello@neeleshjoshi.co.uk"
+          href="mailto:neeleshjjoshi@gmail.com"
           aria-label="link to email"
           rel="noopener noreferrer"
         >
